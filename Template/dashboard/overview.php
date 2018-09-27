@@ -16,7 +16,10 @@
 <?php $starredProjects = $this->app->starredProjectsModel->findAllProjects($this->user->getId()); ?>
 <?php if(!empty($starredProjects)): ?>
     <div class="table-list">
-        <div class="table-list-header">♥ My favorite projects I love very much from the bottom of my heart ♥</div>
+        <div class="table-list-header">
+            <div class="table-list-header-count"><?= t('Starred projects') ?></div>
+            <div class="table-list-header-menu">&nbsp;</div>
+        </div>
         <?php foreach ($starredProjects as $project): ?>
             <div class="table-list-row table-border-left">
                 <div>

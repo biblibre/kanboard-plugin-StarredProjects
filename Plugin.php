@@ -15,6 +15,11 @@ class Plugin extends Base
         $this->hook->on('template:layout:css', array('template' => 'plugins/StarredProjects/assets/css/starred-projects.css'));
     }
 
+    public function onStartup()
+    {
+        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__ . '/Locale');
+    }
+
     public function getClasses()
     {
         return [
