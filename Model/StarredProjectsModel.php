@@ -4,18 +4,8 @@ namespace Kanboard\Plugin\StarredProjects\Model;
 
 use Kanboard\Core\Base;
 
-/**
- * Class MetadataType.
- *
- * @author Daniele Lenares <daniele.lenares@gmail.com>
- */
 class StarredProjectsModel extends Base
 {
-    /**
-     * SQL table name for MetadataType.
-     *
-     * @var string
-     */
     const TABLE = 'starred_projects';
 
     public function findAllProjects($user_id)

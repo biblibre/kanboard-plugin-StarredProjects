@@ -4,11 +4,6 @@ namespace Kanboard\Plugin\StarredProjects\Controller;
 
 use Kanboard\Controller\BaseController;
 
-/**
- * StarredProjects.
- *
- * @author  BlueTeck
- */
 class StarredProjectsController extends BaseController
 {
     public function starProject()
