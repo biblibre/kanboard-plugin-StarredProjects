@@ -22,12 +22,6 @@ class StarredProjectsModel extends Base
         return $projects;
     }
 
-    public function findAllProjectsForBoardSelector($user_id, $all_boards)
-    {
-        $starred_projects = array_column($this->findAllProjects($user_id), 'name', 'id');        
-        return count($starred_projects) > 0 ? $starred_projects : $all_boards;
-    }
-
     public function find($project_id, $user_id)
     {
         $starredProject = $this->db->table(self::TABLE)

@@ -1,4 +1,13 @@
-<?php $board_selector = $this->user->starredProjectsModel->findAllProjectsForBoardSelector($this->user->getId(), $board_selector); ?>
+<?php
+    $starred_projects = $this->app->starredProjectsModel->findAllProjects($this->user->getId());
+    foreach ($starred_projects as $project) {
+        $id = $project['id'];
+        if (array_key_exists($id, $board_selector)) {
+            $board_selector[$id] = " ★ " . $board_selector[$id];
+        }
+    }
+?>
+
 <?= $this->app->component('select-dropdown-autocomplete', array(
     'name' => 'boardId',
     'placeholder' => t('Display another project'),
