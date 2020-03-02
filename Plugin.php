@@ -9,6 +9,7 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        $this->template->hook->attach('template:user:integrations', 'StarredProjects:user/integrations');
         $this->template->setTemplateOverride('dashboard/overview', 'StarredProjects:dashboard/overview');
         $this->template->setTemplateOverride('header/board_selector', 'StarredProjects:header/board_selector');
         $this->hook->on('template:layout:js', array('template' => 'plugins/StarredProjects/assets/js/starred-projects.js'));
