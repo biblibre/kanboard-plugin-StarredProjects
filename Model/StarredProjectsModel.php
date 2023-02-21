@@ -12,6 +12,8 @@ class StarredProjectsModel extends Base
     {
         $starredProjects = $this->db->table(self::TABLE)
             ->eq('user_id', $user_id)
+            ->join('projects', 'id', 'project_id')
+            ->desc('projects.last_modified')
             ->findAll();
 
         $projects = array();
