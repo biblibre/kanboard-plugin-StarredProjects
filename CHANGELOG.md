@@ -13,6 +13,8 @@ StarredProjects now requires Kanboard version 1.2.14 or greater
 
 - Use template hooks instead of overriding template 'dashboard/overview'
   (contributed by @alfredbuehler, #17)
+- Sort starred projects by modification time, recently modified first
+  (contributed by @alfredbuehler, #15)
 
 ## [0.3.0] - 2022-01-20
 
