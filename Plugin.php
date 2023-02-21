@@ -55,4 +55,9 @@ class Plugin extends Base
     {
         return 'https://github.com/biblibre/kanboard-plugin-StarredProjects';
     }
+
+    public function getCompatibleVersion()
+    {
+        return '>=1.2.14';
+    }
 }
