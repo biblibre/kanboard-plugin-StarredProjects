@@ -5,7 +5,10 @@
             <div class="table-list-header-count"><?= t('Starred projects') ?></div>
             <div class="table-list-header-menu">&nbsp;</div>
         </div>
-        <?php foreach ($starredProjects as $project): ?>
+        <?php foreach ($starredProjects as $project): 
+              if($project == null)
+			     continue;
+        ?>
             <div class="table-list-row table-border-left">
                 <div>
                     <?php if ($this->user->hasProjectAccess('ProjectViewController', 'show', $project['id'])): ?>
