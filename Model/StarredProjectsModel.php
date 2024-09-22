@@ -41,8 +41,6 @@ class StarredProjectsModel extends Base
             'user_id' => $user_id,
         ));
 
-        error_log("STATUS = $status aaaa");
-
         return $status;
     }
 
@@ -51,8 +49,6 @@ class StarredProjectsModel extends Base
         $status = $this->db->table(self::TABLE)
             ->eq('id', $starred_id)
             ->remove();
-
-        error_log("STATUS = $status bbbb");
 
         return !$status;
     }
