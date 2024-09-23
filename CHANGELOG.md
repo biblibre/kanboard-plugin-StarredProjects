@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2024-09-23
+
+- Added italian translation (contributed by @kenlog, #20)
+- Use fieldset in user integrations form (contributed by @kenlog, #20)
+
 ## [0.4.0] - 2023-02-21
 
 StarredProjects now requires Kanboard version 1.2.14 or greater
@@ -39,6 +44,7 @@ StarredProjects now requires Kanboard version 1.2.14 or greater
 
 Initial release
 
+[0.5.0]: https://github.com/biblibre/kanboard-plugin-StarredProjects/releases/tag/v0.5.0
 [0.4.0]: https://github.com/biblibre/kanboard-plugin-StarredProjects/releases/tag/v0.4.0
 [0.3.0]: https://github.com/biblibre/kanboard-plugin-StarredProjects/releases/tag/v0.3.0
 [0.2.0]: https://github.com/biblibre/kanboard-plugin-StarredProjects/releases/tag/v0.2.0
